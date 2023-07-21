@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct book
+{
+        int bno;
+        char bname[20];
+        int rate,qty;
+        float total;
+        };
+        int main()
+        {
+        struct book b1;
+        void disp(struct book b1);
+        printf("enter bno,bname,rate and and quatity:");
+        scanf("%d%s%d%d",&b1.bno,&b1.bname,&b1.rate,&b1.qty);
+
+        disp(b1);
+        }
+        void disp(struct book b1)
+        {
+        int t;
+                t=b1.rate*b1.qty;
+        printf("\nbook total=%d",t);
+        }
