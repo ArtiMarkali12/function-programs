@@ -20,7 +20,7 @@ int main()
         if(x==-1)
         printf("number is not found :");
         else 
-        printf("number is found at position =%d",i);
+        printf("number is found at position =%d",x);
         }
         int search(int a[100],int x,int n)
         {
