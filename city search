@@ -1,0 +1,41 @@
+include<stdio.h>
+#include<string.h>
+struct cities
+{
+        int stdcode;
+        char name[20];
+        }c1[100];
+        int main()
+        {
+        char nm[100];
+        int i,n;
+        void search(struct cities c1[100],int n,char nm[100]);
+        printf("enter limit :");
+        scanf("%d",&n);
+        for(i=0;i<n;i++)
+        {
+        printf("enter city name :");
+        scanf("%s",&c1[i].name);
+        printf("enter stdcode");
+        scanf("%d",&c1[i].stdcode);
+}
+        printf("enter city name search");
+        scanf("%s",&nm);
+        search(c1,nm,n);
+        }
+        void search(struct cities c1[100],int n,char nm[10])
+        {
+        int i;
+        for(i=0;i<n;i++)
+        {
+        if(strcmp(c1[i].name,nm)==0)
+        {
+        break;
+        }
+        }
+        if(i==n)
+        printf("city not found :");
+        else
+        printf("city is found:");
+        }
+
