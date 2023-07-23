@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+        int base,i,pow;
+        int  p=1;
+        int disp(int base,int pow);
+        printf("enter a bse value:");
+        scanf("%d",&base);
+        printf("enter a power value");
+        scanf("%d",&pow);
+
+        p=disp(base,pow);
+         printf("%d^%d=%d",base,pow,p);
+        return 0;
+}
+        int disp(int base,int pow)
+        {
+        int i,p=1;
+        for(i=1;i<=pow;i++)
+        {
+        p=p*base;
+
+        }
+        return p;
+        }
