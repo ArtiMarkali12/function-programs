@@ -1,0 +1,19 @@
+include<stdio.h>
+int main()
+{
+        int i,n,fact=1;
+        int facto(int fact,int n );
+        printf("enter a number:");
+        scanf("%d",&n);
+        facto(fact,n);
+        }
+        int facto(int fact,int n)
+        {
+        int i;
+        for(i=1;i<=n;i++)
+        {
+        fact=fact*i;
+        }
+        printf("factorial of number =%d",fact);
+        }
+
