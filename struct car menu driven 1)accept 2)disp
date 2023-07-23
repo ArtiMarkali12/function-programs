@@ -1,0 +1,48 @@
+#include<stdio.h>
+struct car
+{
+        int cno;
+        char cname[20];
+        char colour[20];
+        int cost;
+        }c1;
+        int main()
+        {
+        int ch;
+        void accept();
+        void disp();
+        do
+        {
+        printf("\n 1-accept  car \n 2- disp car ");
+        printf("enter choice :");
+        scanf("%d",&ch);
+        switch(ch)
+        {
+        case 1:accept();
+                break;
+        case 2:disp();
+                break;
+        default:printf("invalid choice :");
+        }
+}while(ch<3);
+}
+        void accept()
+        {
+        printf("enter car no:");
+        scanf("%d",&c1.cno);
+        printf("enter car model name :");
+        scanf("%s",&c1.cname);
+        printf("enter car colour :");
+        scanf("%s",&c1.colour);
+        printf("enter car cost :");
+        scanf("%d",&c1.cost );
+        }
+        void disp()
+        {
+        printf("\n car no=%d",c1.cno);
+        printf("\n car model name=%s",c1.cname);
+        printf("\n car colour=%s",c1.colour );
+        printf("\n car cost=%d",c1.cost);
+        }
+
+
